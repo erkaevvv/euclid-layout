@@ -1,0 +1,28 @@
+.header {
+	background-color: #FFF;
+	min-height: 69px;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: inherit;
+}
+
+.menu-btn {
+	width: 30px;
+	height: 23px;
+	background-image: url(/img/menu-btn.svg);
+}
+
+.search-btn {
+	width: 24px;
+	height: 24px;
+	background-image: url(/img/search-btn.svg);
+}
+
+.borderless_btn {
+	border: none;
+	background-color: #FFF;
+}
