@@ -12,25 +12,49 @@
 
 	<header class="header">
 		<div class="container header__container">
-			<button class="menu-btn borderless_btn"></button>
+			<button class="menu-btn borderless_btn">
+				<span class="menu-btn__line"></span>
+			</button>
 			<a href="#">
-				<img src="img/logo.svg" alt="Euclid Logo">
+				<picture>
+					<source srcset="img/logo-big.svg" media="(min-width: 1920px)">
+					<source srcset="img/logo-medium.svg" media="(min-width: 768px)">
+					<img src="img/logo.svg" alt="Euclid Logo">
+				</picture>
 			</a>
-			<button class="search-btn borderless_btn"></button>
+			<nav class="header-nav">
+				<ul class="header-nav__menu">
+					<li class="header-nav__item"><a href="#" class="header-nav__link">О нас</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">Проекты</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">Этапы</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">Отзывы</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<button class="search-btn borderless_btn">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#333" d="M18.606 17.376 24 22.675l-1.348 1.324-5.394-5.298z"/>
+					<path stroke="#333" stroke-width="2" d="M20.93 10.773c0 5.38-4.445 9.772-9.965 9.772S1 16.153 1 10.773C1 5.392 5.445 1 10.965 1s9.965 4.392 9.965 9.773Z"/>
+				</svg>
+			</button>
 		</div>
 	</header>
 	
 	<footer class="footer">
-		<div class="container">
-			<section class="footer__section">
-				
+		<section class="container footer__section">
+
+			<p class="footer__paragraph">Высокий уровень вовлечения представителей целевой аудитории является четким 
+				доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет 
+				оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому 
+				кругу (специалистов) участие в формировании стандартных подходов.</p>
+
+			<div class="footer__upper-container">
 				<h2 class="title">Оставить заявку</h2>
-				<form class="form">
+				<form id="user-info" class="form">
 					<input type="text" placeholder="Фамилия, имя и отчество*" class="form__input">
 					<input type="email" placeholder="E-mail*" class="form__input">
 					<textarea placeholder="Сообщение" class="form__input form__input_message"></textarea>
-					<input type="submit" value="Отправить данные" class="form__submit">
 				</form>
+				<button class="submit-btn" form="user-info">Отправить данные</button>
 				<div class="agreement">
 					<label>
 						<input type="checkbox" class="agreement__checkbox">
@@ -39,7 +63,24 @@
 					</label>
 				</div>
 				<hr class="separator">
-				<img src="img/logo-white.svg" alt="Euclid Logo" class="logo">
+			</div>
+			
+			<div class="footer__bottom-container">
+				<picture>
+					<source srcset="img/logo-white-medium.svg" media="(min-width: 768px)">
+					<img src="img/logo-white.svg" alt="Euclid Logo" class="footer__logo">
+				</picture>
+				<nav class="footer-nav">
+					<ul class="footer-nav__menu">
+						<li class="footer-nav__item"><a href="#" class="footer-nav__link">О нас</a></li>
+						<li class="footer-nav__item"><a href="#" class="footer-nav__link">Проекты</a></li>
+						<li class="footer-nav__item"><a href="#" class="footer-nav__link">Отзывы</a></li>
+						<li class="footer-nav__item"><a href="#" class="footer-nav__link">Договор оферты</a></li>
+						<li class="footer-nav__item"><a href="#" class="footer-nav__link">Договор подряда</a></li>
+						<li class="footer-nav__item"><a href="#" class="footer-nav__link">Конфиденциальность</a></li>
+						<li class="footer-nav__item"><a href="#" class="footer-nav__link">Партнерское соглашение</a></li>
+					</ul>
+				</nav>
 				<ul class="socials">
 					<li class="socials__logo">
 						<a href="#" class="socials__link"></a>
@@ -51,10 +92,10 @@
 						<a href="#" class="socials__link"></a>
 					</li>
 				</ul>
+			</div>
 				
 			</section>
-		</div>
-	</footer>
+		</footer>
 		
 </body>
 </html>
